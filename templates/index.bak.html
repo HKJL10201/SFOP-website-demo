@@ -6,12 +6,14 @@
   <meta name="My web page" content="web, html" />
   <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
   <title>Demo</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename= 'css/tags.css') }}" />
-  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename= 'css/classes.css') }}" />
-  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename= 'css/pics.css') }}" />
-  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename= 'css/sites.css') }}" />
-  <script src="{{ url_for('static', filename= 'js/jquery.js') }}"></script>
-  <script src="{{ url_for('static', filename= 'js/main.js') }}"></script>
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/tags.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/classes.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/pics.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../static/css/sites.css" />
+  <script src="../static/js/jquery.js"></script>
+  <script src="../static/js/main.js"></script>
+  <!--<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=492be57f6b2cbf2242e927e73b07b1b4"></script>  -->
+  <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=dvR6EBG5Z7yzEeAiGcwArzXet3XbqDUj"></script> -->
 </head>
 
 <body>
@@ -34,6 +36,7 @@
         </div>
 
         <div class="manubar" id="top-menu">
+          <!-- <a href="./bbs.html">社区论坛</a> -->
           <a id="link-sec4">Section 4</a>
           <a id="link-sec3">Section 3</a>
           <a id="link-sec2">Section 2</a>
@@ -188,6 +191,8 @@
     </div>
     <div class="content-box" id="sec2">
       <div class="content-text">
+        <!-- <div class="horizon"> -->
+        <!-- <div class="artical"> -->
         <h3>Outreach Information</h3>
         <br />
         <h4>Star Parties:</h4>
@@ -204,6 +209,7 @@
           viewing and H-alpha telescopes for prominences, flares, faculae, and
           filaments.
         </p>
+        <hr />
         <br />
         <h4>Presentations:</h4>
         <p>
@@ -229,6 +235,14 @@
           Questions, requests, and comments can be sent to
           <a href="mailto:observatory@physics.utah.edu">observatory@physics.utah.edu</a>.
         </p>
+        <!-- </div>
+            <div class="pic-wrap">
+              <div class="pic-blk">
+                <img src="./img/main/深证.jpg" />
+                <h6>Title</h6>
+              </div>
+            </div>
+          </div> -->
       </div>
     </div>
     <div class="content-box" id="sec3">

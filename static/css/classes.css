@@ -228,6 +228,13 @@
 }
 .pic-blk img{
     height: 146px;
+    background-size: cover;
+}
+#right-img2{
+    background-image: url("../img/main/m2.jpg");
+}
+#right-img3{
+    background-image: url("../img/main/m3.jpg");
 }
 .pic-blk h6{
     margin: 8px;

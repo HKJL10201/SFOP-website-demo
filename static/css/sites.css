@@ -78,7 +78,8 @@
     -webkit-box-shadow:0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px 1px rgba(0, 0, 0, 0.14);
 }
 .site img{
-    height: 140px;;
+    height: 140px;
+    background-size: cover;
 }
 .site-data{
     height: 55px;
@@ -93,4 +94,31 @@
     margin: 0;
     padding: 0;
     font-size: 12px;
+}
+#site1{
+    background-image: url("../img/site/s1.jpg");
+}
+#site2{
+    background-image: url("../img/site/s2.jpg");
+}
+#site3{
+    background-image: url("../img/site/s3.jpg");
+}
+#site4{
+    background-image: url("../img/site/s4.jpg");
+}
+#site5{
+    background-image: url("../img/site/s5.jpg");
+}
+#site6{
+    background-image: url("../img/site/s6.jpg");
+}
+#site7{
+    background-image: url("../img/site/s7.jpg");
+}
+#site8{
+    background-image: url("../img/site/s8.jpg");
+}
+#site9{
+    background-image: url("../img/site/s9.jpg");
 }
