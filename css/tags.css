@@ -1,0 +1,83 @@
+h1,h2,h3,h4,h6,p{
+    margin: 0;
+    text-align: justify;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #372c2c;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+h2{
+    font-size: 30px;
+    color: #3F3F3F;
+}
+h3{
+    font-size: 26px;
+    /* margin: 0px 0px 15px 0px; */
+}
+h4{
+    font-size: 21px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+a{
+    cursor: pointer;  /*鼠标覆盖上按钮成手的样子*/
+}
+blockquote{
+    margin-top: 0;
+}body{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    background-color:#fafafa;
+    align-items: center;
+
+    color: #47494a;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    text-rendering: optimizelegibility;
+    -webkit-font-smoothing: antialiased;
+}
+div{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: justify;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid #aaa;
+    width: 99%;
+    text-align: left;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+th{
+    vertical-align: baseline;
+    padding: 5px 15px 5px 6px;
+    background-color: #3f3f3f;
+    border: 1px solid #3F3F3F;
+    color: #fff;
+}
+td{
+    vertical-align: text-top;
+    padding: 6px 15px 6px 6px;
+    border: 1px solid #aaa;
+    color: #666;
+}
+hr{
+    color: #ececec;
+    background-color: #ececec;
+}
