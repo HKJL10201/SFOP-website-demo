@@ -1,85 +1,109 @@
-.pic{
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #18191b;
+#header-imgs {
+  width: 500%;
+  height: 100%;
+  margin-left: 0%;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  z-index: -1;
 }
-#pics{
-    width: 500%;
-    height: 100%;
-    margin-left: 0%;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    z-index: -1;
+.header-pic {
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #18191b;
 }
-#pic1{
-    background-image: url("../img/header/h1.webp");
+#header-pic1 {
+  background-image: url("../img/header/h1.webp");
 }
-#pic2{
-    background-image: url("../img/header/h2.jpg");
+#header-pic2 {
+  background-image: url("../img/header/h2.jpg");
 }
-#pic3{
-    background-image: url("../img/header/h3.webp");
+#header-pic3 {
+  background-image: url("../img/header/h3.webp");
 }
-#pic4{
-    background-image: url("../img/header/h4.jpg");
+#header-pic4 {
+  background-image: url("../img/header/h4.jpg");
 }
-#pic5{
-    background-image: url("../img/header/h5.webp");
+#header-pic5 {
+  background-image: url("../img/header/h5.webp");
 }
-.button-block{
-    width: 60px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
+.header-img-shift-button {
+  width: 60px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
 }
-#rig-bb{
-    background: -webkit-linear-gradient(left, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,.3));
+#header-img-right-shift-button {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 }
-#lft-bb{
-    background: -webkit-linear-gradient(right, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* Safari 5.1 - 6.0 */
-    background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Opera 11.1 - 12.0 */
-    background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to left, rgba(0,0,0,0) , rgba(0,0,0,.3));
+#header-img-left-shift-button {
+  background: -webkit-linear-gradient(
+    right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.3)
+  ); /* Firefox 3.6 - 15 */
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
 }
-.buttons{
-    height: 200px;
-    width: 60px;
-    background-color: rgba(0,0,0,0);
-    border: 0;
-    font-size: 40px;
-    color: rgba(220,220,220,.9);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    transform: scaleY(2);
-    padding: 0;
-    cursor: pointer;
+.buttons {
+  height: 200px;
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0;
+  font-size: 40px;
+  color: rgba(220, 220, 220, 0.9);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transform: scaleY(2);
+  padding: 0;
+  cursor: pointer;
 }
-.dot-block{
-    height: 100%;
-    justify-content: flex-end;
+#header-img-dot-container {
+  height: 100%;
+  justify-content: flex-end;
 }
-.dots{
-    flex-direction: row;
-    margin-bottom: 6px;
+#header-img-dot-buttons {
+  flex-direction: row;
+  margin-bottom: 6px;
 }
-.sl-dot{
-    height: 12px;
-    width: 12px;
-    margin: 5px;
-    padding: 0;
-    border-radius: 50%;
-    border: 0;
-    background-color:rgba(255,255,255,.9);
-    cursor: pointer;
+.header-img-dot {
+  height: 12px;
+  width: 12px;
+  margin: 5px;
+  padding: 0;
+  border-radius: 50%;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
 }
-#sl0{
-    background-color:rgba(180,180,180,.9);
+#header-img-dot0 {
+  background-color: rgba(180, 180, 180, 0.9);
 }

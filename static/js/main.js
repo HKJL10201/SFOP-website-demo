@@ -8,24 +8,24 @@ window.onload = function () {
 
   function rightSlide() {
     // img right shift
-    var inb = "sl" + index.toString(); // bottom buttons, start with "sl"，append `index`
+    var inb = "header-img-dot" + index.toString(); // bottom buttons, start with "header-img-dot"，append `index`
     index = (index + 1) % 5; //index+1
-    var ind = "sl" + index.toString(); // get id of next button
+    var ind = "header-img-dot" + index.toString(); // get id of next button
     document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)"; // last button turns white
     document.getElementById(ind).style.backgroundColor = "rgba(180,180,180,.9)"; // curr button turns gray
-    $("#pics").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the next item of `ml` array
+    $("#header-imgs").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the next item of `ml` array
   }
   function leftSlide() {
     // img left shift
-    var inb = "sl" + index.toString();
+    var inb = "header-img-dot" + index.toString();
     index = (index + 4) % 5;
-    var ind = "sl" + index.toString();
+    var ind = "header-img-dot" + index.toString();
     document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)";
     document.getElementById(ind).style.backgroundColor = "rgba(180,180,180,.9)";
-    $("#pics").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the last item of `ml` array
+    $("#header-imgs").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the last item of `ml` array
   }
   function lostLastDot() {
-    var inb = "sl" + index.toString();
+    var inb = "header-img-dot" + index.toString();
     document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)";
   }
 
@@ -38,44 +38,44 @@ window.onload = function () {
     //   leftSlide();
     //   clearInterval(timer);
     // });
-    $("#sl0").click(function () {
+    $("#header-img-dot0").click(function () {
       lostLastDot();
       index = 0;
-      document.getElementById("sl0").style.backgroundColor =
+      document.getElementById("header-img-dot0").style.backgroundColor =
         "rgba(180,180,180,.9)";
-      $("#pics").animate({ marginLeft: "0%" });
+      $("#header-imgs").animate({ marginLeft: "0%" });
       clearInterval(timer);
     });
-    $("#sl1").click(function () {
+    $("#header-img-dot1").click(function () {
       lostLastDot();
       index = 1;
-      document.getElementById("sl1").style.backgroundColor =
+      document.getElementById("header-img-dot1").style.backgroundColor =
         "rgba(180,180,180,.9)";
-      $("#pics").animate({ marginLeft: "-100%" });
+      $("#header-imgs").animate({ marginLeft: "-100%" });
       clearInterval(timer);
     });
-    $("#sl2").click(function () {
+    $("#header-img-dot2").click(function () {
       lostLastDot();
       index = 2;
-      document.getElementById("sl2").style.backgroundColor =
+      document.getElementById("header-img-dot2").style.backgroundColor =
         "rgba(180,180,180,.9)";
-      $("#pics").animate({ marginLeft: "-200%" });
+      $("#header-imgs").animate({ marginLeft: "-200%" });
       clearInterval(timer);
     });
-    $("#sl3").click(function () {
+    $("#header-img-dot3").click(function () {
       lostLastDot();
       index = 3;
-      document.getElementById("sl3").style.backgroundColor =
+      document.getElementById("header-img-dot3").style.backgroundColor =
         "rgba(180,180,180,.9)";
-      $("#pics").animate({ marginLeft: "-300%" });
+      $("#header-imgs").animate({ marginLeft: "-300%" });
       clearInterval(timer);
     });
-    $("#sl4").click(function () {
+    $("#header-img-dot4").click(function () {
       lostLastDot();
       index = 4;
-      document.getElementById("sl4").style.backgroundColor =
+      document.getElementById("header-img-dot4").style.backgroundColor =
         "rgba(180,180,180,.9)";
-      $("#pics").animate({ marginLeft: "-400%" });
+      $("#header-imgs").animate({ marginLeft: "-400%" });
       clearInterval(timer);
     });
   });
@@ -140,13 +140,13 @@ $(function () {
     $("#Top-button").click(function () {
       $("html, body").animate({ scrollTop: 0 }, 500);
     });
-    $("#link1").click(function () {
+    $("#header-link1").click(function () {
       $("html, body").animate({ scrollTop: 0 }, 500);
     });
-    $("#link2").click(function () {
+    $("#header-link2").click(function () {
       $("html, body").animate({ scrollTop: $("#intro").offset().top - top }, 500);
     });
-    $("#link-sec1").click(function () {
+    $("#header-link3").click(function () {
       $("html, body").animate({ scrollTop: $("#programs-div").offset().top - top }, 500);
     });
     $("#link-sec2").click(function () {
@@ -155,8 +155,8 @@ $(function () {
     $("#link-sec3").click(function () {
       $("html, body").animate({ scrollTop: $("#sec3").offset().top - top }, 500);
     });
-    $("#link-sec4").click(function () {
-      $("html, body").animate({ scrollTop: $("#sec4").offset().top - top }, 500);
+    $("#header-link4").click(function () {
+      $("html, body").animate({ scrollTop: $("#contact-div").offset().top - top }, 500);
     });
   });
 });
