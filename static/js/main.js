@@ -1,28 +1,28 @@
 // JavaScript Document
 
 window.onload = function () {
-  var container = document.getElementById("head-container");
+  var container = document.getElementById("header-img-container");
   var timer;
-  var ml = ["0%", "-100%", "-200%", "-300%", "-400%"]; //存放margin-left的取值
-  var index = 0; //当前下标
+  var ml = ["0%", "-100%", "-200%", "-300%", "-400%"]; // array of `margin-left`
+  var index = 0; // curr index
 
   function rightSlide() {
-    //图片向右切换
-    var inb = "sl" + index.toString(); //底部按钮 以sl开头，第index个按钮（当前
+    // img right shift
+    var inb = "sl" + index.toString(); // bottom buttons, start with "sl"，append `index`
     index = (index + 1) % 5; //index+1
-    var ind = "sl" + index.toString(); //获得下一个按钮的id
-    document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)"; //上一按钮变白
-    document.getElementById(ind).style.backgroundColor = "rgba(180,180,180,.9)"; //当前按钮变灰
-    $("#pics").animate({ marginLeft: ml[index] }); //图片框的margin-left变为ml数组的下一项
+    var ind = "sl" + index.toString(); // get id of next button
+    document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)"; // last button turns white
+    document.getElementById(ind).style.backgroundColor = "rgba(180,180,180,.9)"; // curr button turns gray
+    $("#pics").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the next item of `ml` array
   }
   function leftSlide() {
-    //图片向左切换
+    // img left shift
     var inb = "sl" + index.toString();
     index = (index + 4) % 5;
     var ind = "sl" + index.toString();
     document.getElementById(inb).style.backgroundColor = "rgba(255,255,255,.9)";
     document.getElementById(ind).style.backgroundColor = "rgba(180,180,180,.9)";
-    $("#pics").animate({ marginLeft: ml[index] }); //图片框的margin-left变为ml数组的上一项
+    $("#pics").animate({ marginLeft: ml[index] }); // set the `margin-left` of img frame to the last item of `ml` array
   }
   function lostLastDot() {
     var inb = "sl" + index.toString();
@@ -89,31 +89,8 @@ window.onload = function () {
     clearInterval(timer);
   }
 
-  container.onmouseover = stop; //鼠标悬浮在图片上停止轮播
-  container.onmouseout = play; //鼠标离开就开始轮播
-
-  // var rb = document.getElementById("rig-btn");
-  // function hr() {
-  //   $("#rig-btn").animate({ paddingRight: "15px" }, 150);
-  //   rb.style.color = "white";
-  // }
-  // function lr() {
-  //   $("#rig-btn").animate({ paddingRight: "0" }, 150);
-  //   rb.style.color = "rgba(220,220,220,.9)";
-  // }
-  // rb.onmouseenter = hr;
-  // rb.onmouseleave = lr;
-  // var lb = document.getElementById("lft-btn");
-  // function hl() {
-  //   $("#lft-btn").animate({ paddingLeft: "15px" }, 150);
-  //   lb.style.color = "white";
-  // }
-  // function ll() {
-  //   $("#lft-btn").animate({ paddingLeft: "0" }, 150);
-  //   lb.style.color = "rgba(220,220,220,.9)";
-  // }
-  // lb.onmouseenter = hl;
-  // lb.onmouseleave = ll;
+  container.onmouseover = stop; // stop shifting if mouse hover
+  container.onmouseout = play; // start shifting if mouse leave
 
   //play();
   $("#site-left").fadeOut(0);
@@ -121,32 +98,36 @@ window.onload = function () {
   $("#Top-button").fadeOut(0);
   document.getElementById("Top-button").style.height = "50px";
 };
-$(document).ready(function () {
-  $("#site-right").click(function () {
-    $("#sites").animate({ marginLeft: "-732px" });
-    $("#site-right").fadeOut(100);
-    $("#site-left").fadeIn(100);
-  });
-  $("#site-left").click(function () {
-    $("#sites").animate({ marginLeft: "0px" });
-    $("#site-left").fadeOut(100);
-    $("#site-right").fadeIn(100);
-  });
-  $("#fd-right").click(function () {
-    $("#food").animate({ marginLeft: "-520px" });
-    $("#fd-right").fadeOut(100);
-    $("#fd-left").fadeIn(100);
-  });
-  $("#fd-left").click(function () {
-    $("#food").animate({ marginLeft: "0px" });
-    $("#fd-left").fadeOut(100);
-    $("#fd-right").fadeIn(100);
-  });
-});
+
+// gallery
+// $(document).ready(function () {
+//   $("#site-right").click(function () {
+//     $("#sites").animate({ marginLeft: "-732px" });
+//     $("#site-right").fadeOut(100);
+//     $("#site-left").fadeIn(100);
+//   });
+//   $("#site-left").click(function () {
+//     $("#sites").animate({ marginLeft: "0px" });
+//     $("#site-left").fadeOut(100);
+//     $("#site-right").fadeIn(100);
+//   });
+//   $("#fd-right").click(function () {
+//     $("#food").animate({ marginLeft: "-520px" });
+//     $("#fd-right").fadeOut(100);
+//     $("#fd-left").fadeIn(100);
+//   });
+//   $("#fd-left").click(function () {
+//     $("#food").animate({ marginLeft: "0px" });
+//     $("#fd-left").fadeOut(100);
+//     $("#fd-right").fadeIn(100);
+//   });
+// });
+
+// Top button and navigator
 $(function () {
   var top = 74;
   $(function () {
-    //当滚动条的位置处于距顶部74像素以下时，“回到顶部”按钮出现，否则消失
+    // show Top button if scroll down 74 pixels
     $(window).scroll(function () {
       if ($(window).scrollTop() > top) {
         $("#Top-button").fadeIn(300);
@@ -155,15 +136,18 @@ $(function () {
       }
     });
 
-    //当点击悬浮按钮后，回到页面顶部位置
+    // Top button and navigator click
     $("#Top-button").click(function () {
       $("html, body").animate({ scrollTop: 0 }, 500);
     });
     $("#link1").click(function () {
       $("html, body").animate({ scrollTop: 0 }, 500);
     });
+    $("#link2").click(function () {
+      $("html, body").animate({ scrollTop: $("#intro").offset().top - top }, 500);
+    });
     $("#link-sec1").click(function () {
-      $("html, body").animate({ scrollTop: $("#sec1").offset().top - top }, 500);
+      $("html, body").animate({ scrollTop: $("#programs-div").offset().top - top }, 500);
     });
     $("#link-sec2").click(function () {
       $("html, body").animate({ scrollTop: $("#sec2").offset().top - top }, 500);

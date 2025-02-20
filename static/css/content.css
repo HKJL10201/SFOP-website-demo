@@ -1,0 +1,112 @@
+.horizon{
+    display: flex;
+    flex-direction: row;
+}
+.dark-div{
+    background-color: #372c2c;
+}
+.page{
+    margin-bottom: 100px;
+    width: 100%;
+    align-items: center;
+    background-color:#fafafa;
+}
+
+#content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+.content-box{
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.content-text{
+    width: 1168px;
+    background-color:rgb(255,255,255);
+    padding: 20px 40px;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    flex-shrink: 0;
+
+    /*background-color:rgba(255,255,255,.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);*/
+}
+.deep-bg{
+    background-color: #f5f5f5;
+}
+.content-textbox{
+    margin: 10px;
+    margin-bottom: 0;
+}
+/* .artical p{
+    text-indent: 2em;
+} */
+/* .content-box p{
+    color: #666;
+    margin-top: 10px;
+} */
+
+
+#intro{
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+#intro h2{
+    /* color: midnightblue; */
+    color: #cf2e2e;
+}
+
+
+.section-title{
+    margin: 50px;
+    color: #cf2e2e;
+    font-size: 32px;
+}
+.radius-box{
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.radius-box:hover{
+    box-shadow: 0 3px 6px rgba(0,0,0,.1);
+}
+
+
+.content-artical{
+    width: 60%;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+.content-pic{
+    width: 40%;
+    align-items: center;
+}
+.pic-blk{
+    width: 85%;
+    height: 85%;
+    /* border:1px solid #e0e0e0; */
+    overflow:hidden;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.pic-blk img{
+    height: 100%;
+    background-size: cover;
+}
+#right-img1{
+    background-image: url("../img/body/scratch.jpg");
+}
+#right-img2{
+    background-image: url("../img/body/lego.webp");
+}
+/* .pic-blk h6{
+    margin: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+} */

@@ -6,6 +6,41 @@
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
     <title>Student-Fueled Outreach Program</title>
     <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="static/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="static/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="static/img/favicon-16x16.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="static/css/header.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="static/css/content.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="static/css/footer.css"
+    />
+    <link
       rel="stylesheet"
       type="text/css"
       media="screen"
@@ -15,19 +50,7 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="static/css/classes.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="static/css/pics.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="static/css/sites.css"
+      href="static/css/imgs.css"
     />
     <script src="static/js/jquery.js"></script>
     <script src="static/js/main.js"></script>
@@ -35,11 +58,11 @@
 
   <body>
     <!-- Title and links -->
-    <div class="header" id="head-container">
-      <div class="header-bar">
-        <div class="header-text">
+    <div id="header-container">
+      <div id="header-bar">
+        <div id="header-text">
           <div class="horizon" id="logo-title">
-            <span class="left-span">
+            <span id="logo-span">
               <div id="logo">
                 <a
                   href="https://www.utah.edu"
@@ -47,7 +70,7 @@
                 ></a>
               </div>
             </span>
-            <span class="right-span">
+            <span id="title-span">
               <div id="title">
                 <h1 id="main-title">Student-Fueled Outreach Program</h1>
                 <span id="sub-title">Kahlert School of Computing</span>
@@ -55,42 +78,47 @@
             </span>
           </div>
 
-          <div class="manubar" id="top-menu">
-            <a id="link-sec4">Section 4</a>
-            <a id="link-sec3">Section 3</a>
-            <a id="link-sec2">Section 2</a>
-            <a id="link-sec1">Section 1</a>
+          <div id="top-menu">
+            <a id="link-sec4">Contact</a>
+            <a id="link-sec1">Programs</a>
+            <a id="link2">About</a>
+            <a id="link1">Home</a>
             <!-- <a id="link1">TOP</a> -->
           </div>
         </div>
       </div>
-      <div id="pics">
-        <div class="pic" id="pic1"></div>
-        <div class="pic" id="pic2"></div>
-        <div class="pic" id="pic3"></div>
-        <div class="pic" id="pic4"></div>
-        <div class="pic" id="pic5"></div>
-      </div>
-      <div class="button-block" id="lft-bb">
-        <!-- <button class="buttons" id="lft-btn">&lt;</button> -->
-      </div>
-      <div class="dot-block">
-        <div class="dots">
-          <button class="sl-dot" id="sl0"></button>
-          <button class="sl-dot" id="sl1"></button>
-          <button class="sl-dot" id="sl2"></button>
-          <button class="sl-dot" id="sl3"></button>
-          <button class="sl-dot" id="sl4"></button>
+      <div id="header-img-container">
+        <div id="pics">
+          <div class="pic" id="pic1"></div>
+          <div class="pic" id="pic2"></div>
+          <div class="pic" id="pic3"></div>
+          <div class="pic" id="pic4"></div>
+          <div class="pic" id="pic5"></div>
+        </div>
+        <div class="button-block" id="lft-bb">
+          <!-- <button class="buttons" id="lft-btn">&lt;</button> -->
+        </div>
+        <div class="dot-block">
+          <div class="dots">
+            <button class="sl-dot" id="sl0"></button>
+            <button class="sl-dot" id="sl1"></button>
+            <button class="sl-dot" id="sl2"></button>
+            <button class="sl-dot" id="sl3"></button>
+            <button class="sl-dot" id="sl4"></button>
+          </div>
+        </div>
+        <div class="button-block" id="rig-bb">
+          <!-- <button class="buttons" id="rig-btn">&gt;</button> -->
         </div>
       </div>
-      <div class="button-block" id="rig-bb">
-        <!-- <button class="buttons" id="rig-btn">&gt;</button> -->
-      </div>
+      <!-- <div class="dark-div" id="header-intro">
+        <h1 id="header-intro-title">Student-Fueled Outreach Program</h1>
+      </div> -->
     </div>
 
     <!-- Main content -->
-    <div class="content">
-      <div class="content-box" id="brief-intro">
+    <div id="content">
+      <div class="content-box dark-div">
         <div class="content-text" id="intro">
           <h2>About us</h2>
           <p>
@@ -110,212 +138,82 @@
           </p>
         </div>
       </div>
-      <div class="content-box" id="sec1">
-        <div class="content-text">
-          <h3>Section 1</h3>
-          <p>
-            We are the AstonomUrs Outreach Group. We provide star parties,
-            presentations, demonstrations, solar viewing, dark sky assistance,
-            astronomy training, and telescope training to all groups of the
-            state of Utah and beyond. You'll find us all over from Bear Lake to
-            the Goosenecks. Feel free to contact us for information regarding
-            how we can help K-12, astronomy clubs, cities, parks, universities,
-            and other educational groups. We're housed out of the South Physics
-            Observatory at the Dept. of Physics and Astronomy of the University
-            of Utah. All our educational and public efforts are free of charge.
-            We do accept tax deductible donations to support our efforts.
-          </p>
-        </div>
-      </div>
-      <div class="content-box">
-        <div class="content-text deep-bg">
-          <h4 id="r3">Gallery</h4>
-          <div class="ste-btn-blk">
-            <div class="button-block">
-              <div class="site-btn site-btn-left" id="site-left">
-                <a>&lt;</a>
-              </div>
+      <div class="content-box" id="programs-div">
+        <br />
+        <h2 class="section-title">Programs</h2>
+        <div class="content-text radius-box">
+          <div class="horizon">
+            <div class="content-artical">
+              <h3>Scratch Programming</h3>
+              <br />
+              <p>
+                Scratch is the world's largest coding community for children
+                and a coding language with a simple visual interface that
+                allows young people to create digital stories, games, and
+                animations. Scratch is designed, developed, and moderated by
+                the Scratch Foundation, a nonprofit organization.
+              </p>
+              <p>
+                Scratch promotes computational thinking and problem solving
+                skills; creative teaching and learning; self-expression and
+                collaboration; and equity in computing.
+              </p>
             </div>
-            <div class="site-block">
-              <div class="roller" id="sites">
-                <div class="site">
-                  <img id="site1" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site2" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site3" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site4" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site5" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site6" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site7" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site8" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-                <div class="site">
-                  <img id="site9" />
-                  <div class="site-data">
-                    <h6>Title</h6>
-                    <p>Description.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="button-block">
-              <div class="site-btn site-btn-right" id="site-right">
-                <a>&gt;</a>
+            <div class="content-pic">
+              <div class="pic-blk">
+                <img id="right-img1" />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="content-box" id="sec2">
-        <div class="content-text">
-          <h3>Outreach Information</h3>
-          <br />
-          <h4>Star Parties:</h4>
-          <p>
-            We have telescopes available to bring to your school, park, city
-            event, etc. backed by experienced astronomers and students from the
-            University Of Utah. Depending on the size of your group, we can
-            schedule up to seven telescopes (if we have the availability) for
-            the event ranging from 8" to 24" in diameter. Although we reserve
-            the 24" for very large groups considering the time and effort
-            required to transport it and set it up. Solar telescopes are also
-            available to view safely during the day time for school groups and
-            others. These include white light filters for exceptional sunspot
-            viewing and H-alpha telescopes for prominences, flares, faculae, and
-            filaments.
-          </p>
-          <br />
-          <h4>Presentations:</h4>
-          <p>
-            We have built a list of presentations that can be catered to most
-            ages and groups. The list includes topics such as black holes,
-            cosmology, stars, our Sun, planets, and more. Physics demos are also
-            available for gravity, electricity, waves, energy, and more.
-          </p>
-          <br />
-          <h4>Need more?</h4>
-          <p>
-            Feel free to contact us if you don't see something on the list that
-            you'd like to learn or have for your classes and groups. We can
-            develop new presentations and demos to fit your needs and can follow
-            Utah State Core guidelines to help your classroom experience.
-          </p>
-          <p>
-            Star parties and presentations can be given to private groups but we
-            ask for a donation to our department to help fund our free outreach
-            for the community.
-          </p>
-          <p>
-            Questions, requests, and comments can be sent to
-            <a href="mailto:observatory@physics.utah.edu"
-              >observatory@physics.utah.edu</a
-            >.
-          </p>
-        </div>
-      </div>
-      <div class="content-box" id="sec3">
-        <div class="content-text deep-bg">
+
+        <div class="content-text radius-box">
           <div class="horizon">
-            <div class="artical">
-              <h3>Section 3</h3>
+            <div class="content-artical">
+              <h3>LEGO<sup>&reg;</sup> Education</h3>
               <br />
               <p>
-                We are the AstonomUrs Outreach Group. We provide star parties,
-                presentations, demonstrations, solar viewing, dark sky
-                assistance, astronomy training, and telescope training to all
-                groups of the state of Utah and beyond. You'll find us all over
-                from Bear Lake to the Goosenecks. Feel free to contact us for
-                information regarding how we can help K-12, astronomy clubs,
-                cities, parks, universities, and other educational groups. We're
-                housed out of the South Physics Observatory at the Dept. of
-                Physics and Astronomy of the University of Utah. All our
-                educational and public efforts are free of charge. We do accept
-                tax deductible donations to support our efforts.
+                LEGO Education offers an engaging and hands-on approach to
+                programming education for kids, combining the creativity of
+                building with the logic of coding. Through interactive kits like
+                LEGO SPIKE&trade; and LEGO Mindstorms<sup>&reg;</sup>, children
+                learn fundamental programming concepts using block-based coding
+                and, as they progress, text-based languages like Python. These
+                tools encourage problem-solving, critical thinking, and
+                collaboration, making coding both fun and accessible. By
+                integrating play with STEM learning, LEGO Education helps young
+                learners develop computational skills that prepare them for the
+                future.
               </p>
             </div>
-            <div class="pic-wrap">
+            <div class="content-pic">
               <div class="pic-blk">
                 <img id="right-img2" />
-                <h6>Title</h6>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="content-box" id="sec4">
-        <div class="content-text">
-          <div class="horizon">
-            <div class="artical">
-              <h3>To UofU Students Who Want to Contribute to this Program</h3>
-              <br />
-              <p>
-                We hope this program serves as a bridge, connecting University
-                of Utah students interested in outreach and educational
-                activities with communities in need. To support this, we will
-                facilitate connections between students and our partner
-                educational groups. Additionally, we will provide content and
-                materials for educational modules, such as introductory Scratch
-                programming lessons.
-              </p>
-              <p>
-                The format and timeframe are flexible, offering various
-                opportunities including teaching a full-semester course, leading
-                short summer camps, conducting one-day workshops, or giving
-                guest lectures at established events. Contact:
-              </p>
-            </div>
-            <div class="pic-wrap">
-              <div class="pic-blk">
-                <img id="right-img3" />
-                <h6>Title</h6>
-              </div>
-            </div>
-          </div>
+        <h2 class="section-title">Contact</h2>
+        <div class="content-text radius-box">
+          <h3>To UofU Students Who Want to Contribute to this Program</h3>
+          <p>
+            We hope this program serves as a bridge, connecting University of
+            Utah students interested in outreach and educational activities with
+            communities in need. To support this, we will facilitate connections
+            between students and our partner educational groups. Additionally,
+            we will provide content and materials for educational modules, such
+            as introductory Scratch programming lessons.
+          </p>
+          <p>
+            The format and timeframe are flexible, offering various
+            opportunities including teaching a full-semester course, leading
+            short summer camps, conducting one-day workshops, or giving guest
+            lectures at established events.
+          </p>
+          <p>Contact:</p>
         </div>
       </div>
 
@@ -326,11 +224,9 @@
     </div>
 
     <!-- Footer -->
-    <div class="content-box" id="otr-col"></div>
+    <div class="content-box dark-div" id="footer-space"></div>
     <div class="footer">
-      <p>
-        Copyright &copy; 2018-2019 <strong>SCUT</strong> All Rights Reserved.
-      </p>
+      <p>&copy; 2025 THE UNIVERSITY OF UTAH</p>
     </div>
   </body>
 </html>

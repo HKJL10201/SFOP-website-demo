@@ -17,19 +17,19 @@
     z-index: -1;
 }
 #pic1{
-    background-image: url("../img/e1.jpg");
+    background-image: url("../img/header/h1.webp");
 }
 #pic2{
-    background-image: url("../img/e2.jpg");
+    background-image: url("../img/header/h2.jpg");
 }
 #pic3{
-    background-image: url("../img/e3.jpg");
+    background-image: url("../img/header/h3.webp");
 }
 #pic4{
-    background-image: url("../img/e4.jpg");
+    background-image: url("../img/header/h4.jpg");
 }
 #pic5{
-    background-image: url("../img/e5.jpg");
+    background-image: url("../img/header/h5.webp");
 }
 .button-block{
     width: 60px;
@@ -42,13 +42,13 @@
     background: -webkit-linear-gradient(left, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(right, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* 标准的语法（必须放在最后） */
+    background: linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,.3));
 }
 #lft-bb{
     background: -webkit-linear-gradient(right, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* Safari 5.1 - 6.0 */
     background: -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Opera 11.1 - 12.0 */
     background: -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.3)); /* Firefox 3.6 - 15 */
-    background: linear-gradient(to left, rgba(0,0,0,0) , rgba(0,0,0,.3)); /* 标准的语法（必须放在最后） */
+    background: linear-gradient(to left, rgba(0,0,0,0) , rgba(0,0,0,.3));
 }
 .buttons{
     height: 200px;
@@ -60,7 +60,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transform: scaleY(2);
     padding: 0;
-    cursor: pointer;  /*鼠标覆盖上按钮成手的样子*/
+    cursor: pointer;
 }
 .dot-block{
     height: 100%;
@@ -78,7 +78,7 @@
     border-radius: 50%;
     border: 0;
     background-color:rgba(255,255,255,.9);
-    cursor: pointer;  /*鼠标覆盖上按钮成手的样子*/
+    cursor: pointer;
 }
 #sl0{
     background-color:rgba(180,180,180,.9);

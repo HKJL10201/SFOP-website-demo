@@ -29,11 +29,12 @@ p{
     margin-bottom: 17px;
 }
 a{
-    cursor: pointer;  /*鼠标覆盖上按钮成手的样子*/
+    cursor: pointer;
 }
 blockquote{
     margin-top: 0;
-}body{
+}
+body{
     margin: 0px;
     display: flex;
     flex-direction: column;
